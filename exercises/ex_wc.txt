@@ -1,0 +1,10 @@
+wc -l exercise in tcl
+=====================
+Create a tcl script which calls another tcl script.
+The parent tcl script will print mucho lines to the child script.
+The child script will count the number of lines that it is supplied with.
+When the parent sends the string "over" the child will write back
+the number of line sent so far.
+The parent will receive that number and will print it out.
+
+Add a graphical user interface built upon tk for this. Integrate with your desktop (just kidding...)

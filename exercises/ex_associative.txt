@@ -1,0 +1,27 @@
+- read a piece of text from the user (use [gets stdin])
+- split that piece of text according to white space (even a single space is enough).
+- count the number of times each word appears in the users text.
+- print the count of each word that appeared in the text.
+
+Example:
+input text: to be or not to be that is the question
+output:
+to => 2
+be => 2
+or => 1
+not => 1
+that => 1
+question => 1
+is => 1
+the => 1
+
+- Create an associative array that stores countries as keys and their capital cities.
+- now programmatically create the reverse of that associative array: map capital
+	cities to the countries they are in.
+
+Example:
+Enter a city to find the country it is the capital of:
+Jerusalem (<===user input)
+Country is "Israel"
+Washington (<===user input)
+Country is "USA"

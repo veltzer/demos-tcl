@@ -1,0 +1,21 @@
+Advanced phonebook exercise
+===========================
+This is based on the basic phonebook exercise.
+
+Take the basic exercise and add io to the program and make the phonebook
+persistant.
+
+Each time the program starts to run look for a file called "phonebook.txt"
+and load it into RAM if it exists.
+
+Each time the program ends save the phonebook you have in RAM into the
+phonebook.txt rewriting it in the process.
+
+Make the format of the phonebook.txt file AS SIMPLE AS POSSIBLE.
+A possible format can be:
+=====phonebook.txt starts here=========
+Mark Veltzer
+050-5665636
+Shay Sarid
+054-4506093
+=====phonebook.txt end here=========

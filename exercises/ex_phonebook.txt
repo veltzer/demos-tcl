@@ -1,0 +1,10 @@
+- Write a phonebook application.
+- The application should show the user a user interface along these lines:
+1) Add a name/phone to the book.
+2) Delete a name from the book.
+3) Modify the phone for a name.
+4) Show the entire phonebook.
+5) Search for phone by name.
+6) Exit.
+- use procedures! (to show the menu, to do each item, ...)
+- hold the phone book in an associative array in RAM.

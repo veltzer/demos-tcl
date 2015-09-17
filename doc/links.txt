@@ -1,0 +1,8 @@
+Download site for tcl for windows:
+http://www.activestate.com/activetcl/downloads
+
+Tcl/Tk quick start on IBM developer works:
+http://www.ibm.com/developerworks/linux/tutorials/l-tcl/
+
+Handling binary data in TCL:
+http://www.wellho.net/mouth/1338_Handling-Binary-data-in-Tcl-with-a-note-on-C-.html
