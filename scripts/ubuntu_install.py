@@ -9,6 +9,9 @@ import subprocess # for check_call
 
 packs=[
 	'tcl',
+	'tcl8.4',
+	'tcl8.5',
+	'tcl8.6',
 ]
 
 args=['sudo','apt-get','install','--assume-yes']
