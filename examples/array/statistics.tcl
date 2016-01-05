@@ -8,4 +8,4 @@ array set phonebook {
 	"shay" "054-4506093"
 }
 
-puts "[array statistics phonebook]"
+puts [array statistics phonebook]
