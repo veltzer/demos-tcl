@@ -7,16 +7,20 @@ ubuntu to compile and work with this package.
 
 import subprocess # for check_call
 
+tcl_version='8.6'
+
 packs=[
-	'tcl',
 	'tcl8.4',
 	'tcl8.5',
-	'tcl8.6',
+
+	'tk',
+	'tcl',
+	'tcl-doc',
+	'tcl{0}'.format(tcl_version),
+	'tcl{0}-dev'.format(tcl_version),
+	'tcl{0}-doc'.format(tcl_version),
 ]
 
 args=['sudo','apt-get','install','--assume-yes']
 args.extend(packs)
-try:
-	subprocess.check_call(args)
-except:
-	pass
+subprocess.check_call(args)
