@@ -6,7 +6,6 @@ set workers {Larry Jim John Mary}
 
 # a
 puts "2nd worker is [lindex $workers 1]"
-puts [list $workers]
 
 # b
 lappend workers Mark
@@ -32,6 +31,7 @@ set workers [lreplace $workers 0 1 Foo Bar]
 puts [list $workers]
 
 # h
+#set workers [lreplace $workers 0 2]
 set workers [lrange $workers 3 end]
 puts [list $workers]
 

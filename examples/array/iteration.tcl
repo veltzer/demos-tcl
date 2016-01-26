@@ -11,6 +11,8 @@ array set phonebook {
 foreach day {sun mon tue} {
 	puts "day is $day"
 }
+# look! the variable keeps the last value of the iteration
+puts "day is $day"
 
 foreach name [array names phonebook] {
 	puts "name is $name"
