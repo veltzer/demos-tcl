@@ -1,6 +1,0 @@
-Create an associate array. Make sure that this array has distinct values (as opposed
-to distinct keys which all associative arrays have). Now reverse the array using code
-and create another associative array which links values to keys (the "reverse" associative
-array).
-
-Demonstrate that it was done right in some way.

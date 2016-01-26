@@ -1,6 +1,7 @@
 #!/usr/bin/tclsh
 
-puts "give me the text"
+puts -nonewline "give me some text "
+flush stdout
 set listOfWords [split [gets stdin]]
 
 foreach word $listOfWords {
