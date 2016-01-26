@@ -14,14 +14,3 @@ that => 1
 question => 1
 is => 1
 the => 1
-
-- Create an associative array that stores countries as keys and their capital cities.
-- now programmatically create the reverse of that associative array: map capital
-	cities to the countries they are in.
-
-Example:
-Enter a city to find the country it is the capital of:
-Jerusalem (<===user input)
-Country is "Israel"
-Washington (<===user input)
-Country is "USA"

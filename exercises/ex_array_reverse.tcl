@@ -8,12 +8,14 @@ foreach {country capital} [array get countryToCapital] {
 	set capitalToCountry($capital) $country
 }
 #while {1} {
-#	puts "Give me a country"
+#	puts -nonewline "Give me a country: "
+#	flush stdout
 #	set country [gets stdin]
 #	puts "The capital of $country is $countryToCapital($country)"
 #}
 while {1} {
-	puts "Give me a capital"
+	puts -nonewline "Give me a capital: "
+	flush stdout
 	set capital [gets stdin]
 	puts "The country of $capital is $capitalToCountry($capital)"
 }
