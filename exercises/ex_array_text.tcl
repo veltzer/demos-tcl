@@ -1,12 +1,13 @@
 #!/usr/bin/tclsh
 
-puts -nonewline "give me some text "
-flush stdout
-set listOfWords [split [gets stdin]]
+# Solution to the text exercise
 
-foreach word $listOfWords {
+puts -nonewline "give me some text: "
+flush stdout
+foreach word [split [gets stdin]] {
 	incr count($word)
 }
-foreach {word cnt} [array get count] {
-	puts "$word ===> $cnt"
-}
+parray count
+#foreach {word cnt} [array get count] {
+#	puts "$word ===> $cnt"
+#}
