@@ -4,8 +4,10 @@
 
 puts -nonewline "give me some text: "
 flush stdout
-foreach word [split [gets stdin]] {
-	incr count($word)
+while {[gets stdin line]>0} {
+	foreach word [split $line] {
+		incr count($word)
+	}
 }
 parray count
 #foreach {word cnt} [array get count] {
