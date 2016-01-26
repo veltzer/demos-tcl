@@ -1,0 +1,13 @@
+read a file of the following format:
+
+============ >8 snip 8< ============
+Larry Bird,45 67 89
+Michael Jordan,34 89 45 67 112
+Magic Johnson,12 45 67
+Lebron James,14 15 16
+============ >8 snip 8< ============
+
+Output the player that:
+	- played the most games
+	- has the highest average
+	- scored the most points in a game

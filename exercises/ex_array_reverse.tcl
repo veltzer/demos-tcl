@@ -10,6 +10,8 @@ set countryToCapital(USA) "Washington"
 foreach {country capital} [array get countryToCapital] {
 	set capitalToCountry($capital) $country
 }
+# print the array for debugging purposes
+#parray capitalToCountry 
 # query country -> capital
 #while {1} {
 #	puts -nonewline "Give me a country: "
