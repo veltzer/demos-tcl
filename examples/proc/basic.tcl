@@ -7,9 +7,7 @@ proc sum {a b} {
 }
 set x 5
 set y 6
-#sum $x $y 
-set result [sum $x $y]
-puts "the sum of 5 and 6 is $result"
+puts "the sum of $x and $y is [sum $x $y]"
 # lets print x and y
 puts "x is $x"
 puts "y is $y"
