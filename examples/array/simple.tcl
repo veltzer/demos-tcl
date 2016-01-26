@@ -8,6 +8,7 @@ array set phonebook {
 	"shay sarid" "054-4506093"
 }
 
+parray phonebook
 puts [array get phonebook]
 puts [array size phonebook]
 puts [array names phonebook]

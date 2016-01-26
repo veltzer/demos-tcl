@@ -4,8 +4,9 @@
 
 puts -nonewline "give me the first value "
 flush stdout
-set a [gets stdin]
+gets stdin a
 puts -nonewline "give me the second value "
 flush stdout
-set b [gets stdin]
+gets stdin b
 puts "the relation is [expr $a<$b]"
+gets stdin
