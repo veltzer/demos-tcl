@@ -1,6 +1,9 @@
-- Create an associative array that stores countries as keys and their capital cities.
+- Create an associative array that stores countries as keys and their capital cities as values.
 - now programmatically create the reverse of that associative array: map capital
 	cities to the countries they are in.
+
+* Note: there should be no problem with 'reversing' the array
+since the names of the capital cities should be distinct.
 
 Example:
 Enter a city to find the country it is the capital of:
@@ -8,10 +11,3 @@ Jerusalem (<===user input)
 Country is "Israel"
 Washington (<===user input)
 Country is "USA"
-
-Create an associate array. Make sure that this array has distinct values (as opposed
-to distinct keys which all associative arrays have). Now reverse the array using code
-and create another associative array which links values to keys (the "reverse" associative
-array).
-
-Demonstrate that it was done right in some way.
