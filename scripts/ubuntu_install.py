@@ -7,19 +7,25 @@ ubuntu to compile and work with this package.
 
 import subprocess # for check_call
 
-tcl_version='8.6'
+def add_version(l, tcl_version, full):
+	l.extend([
+		'tcl{0}'.format(tcl_version),
+		'tcl{0}-dev'.format(tcl_version),
+		'tcl{0}-dbgsym'.format(tcl_version),
+	])
+	if full:
+		l.extend([
+			'tcl{0}-doc'.format(tcl_version),
+		])
 
 packs=[
-	'tcl8.4',
-	'tcl8.5',
-
 	'tk',
 	'tcl',
 	'tcl-doc',
-	'tcl{0}'.format(tcl_version),
-	'tcl{0}-dev'.format(tcl_version),
-	'tcl{0}-doc'.format(tcl_version),
 ]
+add_version(packs, '8.6', True)
+add_version(packs, '8.5', False)
+add_version(packs, '8.4', False)
 
 args=['sudo','apt-get','install','--assume-yes']
 args.extend(packs)
