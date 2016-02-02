@@ -1,0 +1,14 @@
+#!/usr/bin/wish
+
+# Make the main window black
+. config -bg black
+# Create and pack two frames
+frame .f1 -bg white
+frame .f2 -width 120 -height 50 -bg grey50
+frame .f3 -width 150 -height 60 -bg grey40
+# Create a row of buttons
+foreach b { edit view exec delete} {
+	button .f1.$b -text $b
+	pack .f1.$b -side left
+}
+pack .f1 .f2 .f3 -side top

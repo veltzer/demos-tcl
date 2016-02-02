@@ -1,0 +1,10 @@
+#!/usr/bin/wish
+
+wm title . "New Window"
+
+for {set i 0} {$i<10} {incr i} {
+	button .hello$i -text Hello -command { puts "hello from button" }
+	pack .hello$i -padx 20 -pady 10
+}
+#button .hello
+#pack .hello -padx 20 -pady 10

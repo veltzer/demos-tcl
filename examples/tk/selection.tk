@@ -1,0 +1,24 @@
+#!/usr/bin/wish
+
+proc push_button {} {
+	set name [.ent get]
+	.txt insert end "Hello, $name."
+}
+
+frame .frm -relief groove -bg green
+label .lab -text "Enter name:"
+entry .ent
+button .but -text "Push Me" -command "push_button"
+frame .textarea
+text .txt -width 20 -height 10 \
+-yscrollcommand ".srl_y set" -xscrollcommand ".srl_x set"
+scrollbar .srl_y -command ".txt yview" -orient v
+scrollbar .srl_x -command ".txt xview" -orient h
+pack .lab -in .frm
+pack .ent -in .frm
+pack .frm
+pack .but
+grid .txt -in .textarea -row 1 -column 1
+grid .srl_y -in .textarea -row 1 -column 2 -sticky ns
+grid .srl_x -in .textarea -row 2 -column 1 -sticky ew
+pack .textarea
