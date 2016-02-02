@@ -9,5 +9,7 @@
 #
 #	Mark Veltzer
 
-puts [exec ls -l]
-puts "that is folks..."
+set output_from_command [exec ls -l]
+puts "the output of ls -l is...\n$output_from_command"
+#puts [exec ls -l]
+#puts "That's it folks..."
