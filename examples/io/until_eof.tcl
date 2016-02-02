@@ -4,7 +4,8 @@
 # until there are no more lines.
 
 set num 0
-while {[gets stdin line]>0} {
+while {![eof stdin]} {
+	gets stdin
 	incr num
 }
 puts "number of lines that I got is $num"
