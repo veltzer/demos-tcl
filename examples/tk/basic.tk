@@ -1,0 +1,5 @@
+#!/usr/bin/wish
+
+wm title . "New Window"
+button .hello -text Hello -command { puts "hello from button" }
+pack .hello
