@@ -1,0 +1,6 @@
+*.stamp
+
+# python stuff
+__pycache__
+*.pyc
+*.pyo
