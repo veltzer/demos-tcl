@@ -5,5 +5,5 @@ packages=[
     # "tcl{tcl_version}-doc"
     "tk",
     "tcl",
-    "tcl-doc'"
+    "tcl-doc",
 ]
